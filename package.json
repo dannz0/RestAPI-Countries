@@ -1,0 +1,17 @@
+{
+  "name": "country-api",
+  "version": "1.0.0",
+  "description": "This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "default": "index.html",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "dannz",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "sass": "^1.57.1"
+  }
+}

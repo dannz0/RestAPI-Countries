@@ -1,0 +1,21 @@
+.spinner-box {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 6.4rem;
+  height: 6.4rem;
+  margin: 0.8rem;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}

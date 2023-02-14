@@ -1,0 +1,15 @@
+.dark-theme {
+  background-color: $color-darkmode-background;
+
+  &-elements {
+    background-color: $color-darkmode-elements;
+  }
+}
+
+.light-theme {
+  background-color: $color-lightmode-background;
+
+  &-elements {
+    background-color: $color-white;
+  }
+}

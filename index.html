@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="module" src="js/controller.js"></script>
+
+    <title>Frontend Mentor | REST Api Countries</title>
+  </head>
+  <body class="dark-theme">
+    <header class="header">
+      <div class="header-box container">
+        <h1 class="header__title">Where in the world?</h1>
+
+        <div class="header__background-box">
+          <button class="header__background-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="header__icon"
+              viewBox="0 0 512 512"
+            >
+              <title>Moon</title>
+              <path
+                d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+                fill=""
+                stroke=""
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+            </svg>
+            <span>Dark Mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main container">
+      <section class="section--search">
+        <div class="form">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="form__icon-search"
+            viewBox="0 0 512 512"
+          >
+            <title>Search</title>
+            <path
+              d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+              fill=""
+              stroke=""
+              stroke-miterlimit="10"
+              stroke-width="32"
+            />
+            <path
+              fill=""
+              stroke=""
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M338.29 338.29L448 448"
+            />
+          </svg>
+          <div class="form__input-text">
+            <form>
+              <input
+                class="search__input"
+                type="text"
+                placeholder="Search for a country..."
+              />
+            </form>
+          </div>
+
+          <div class="form__input--select">
+            <form>
+              <select name="countries" id="form__input--select">
+                <option value="" disabled selected hidden style="color: white">
+                  Filter by Region
+                </option>
+                <option style="color: white" value="Africa">Africa</option>
+                <option style="color: white" value="America">America</option>
+                <option style="color: white" value="Asia">Asia</option>
+                <option style="color: white" value="Europe">Europe</option>
+                <option style="color: white" value="Oceania">Oceania</option>
+              </select>
+            </form>
+          </div>
+        </div>
+
+        <div class="countries container">
+          <!-- <div class="country country--1">
+            <img
+              src="images/favicon-32x32.png"
+              class="country__img"
+              alt="flag of country"
+            />
+            <div class="country__text-box">
+              <h2 class="title__country">Germany</h2>
+              <p class="text--population">
+                Population:<span> 2312312323</span>
+              </p>
+              <p class="text--region">Region:<span> Europe</span></p>
+              <p class="text--capital">Capital:<span> Berlin</span></p>
+            </div>
+          </div>-->
+        </div>
+      </section>
+
+      <section class="section--details">
+        <button class="btn btn--back">&leftarrow; Back</button>
+
+        <div class="details">
+          <!-- <div class="details__image-box">
+            <img
+              src="images/favicon-32x32.png"
+              class="img__country--details"
+              alt="flag of country"
+            />
+          </div>
+          <div class="details__text-box">
+            <div class="details__text">
+              <h2 class="title__country">Germany</h2>
+              <p class="text--nativename">Details: <span> Deutch</span></p>
+              <p class="text--population">Details: <span> 2312312323</span></p>
+              <p class="text--region">Details: <span> Europe</span></p>
+              <p class="text--subregion">
+                Details: <span> Western Europe</span>
+              </p>
+              <p class="text--capital">Details: <span> Berlin</span></p>
+              <p class="text--domain">Details: <span> .de</span></p>
+              <p class="text--currency">Details: <span> Euro</span></p>
+              <p class="text--language">Details: <span> German</span></p>
+            </div>
+
+            <div class="details__text--neighbours">
+              <p class="text-neighbour--main">Border Countries:</p>
+              <button class="btn btn--neighbour">
+                <p class="text-neighbour">France</p>
+              </button>
+              <button class="btn btn--neighbour">
+                <p class="text-neighbour">Austria</p>
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

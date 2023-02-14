@@ -1,0 +1,40 @@
+.btn--back {
+  margin-bottom: $margin-bottom-forsections;
+  margin-left: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  background-color: $color-darkmode-elements;
+  color: $color-white;
+  box-shadow: rgba($color-box-shadow, 0.56) 0px 1px 20px 1px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-weight: 600;
+  display: none;
+
+  .text-neighbour {
+    font-weight: 300;
+  }
+
+  &:hover {
+    background-color: lighten($color-darkmode-elements, 10%);
+  }
+}
+
+.btn--neighbour {
+  color: $color-white;
+  border: none;
+  width: 7.2rem;
+  background-color: $color-darkmode-elements;
+  padding: 0.6rem 2.4rem;
+  display: flex;
+  justify-content: center;
+  justify-self: start;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: rgba($color-box-shadow, 0.56) 0px 1px 20px 1px;
+
+  &:hover {
+    background-color: lighten($color-darkmode-elements, 10%);
+  }
+}

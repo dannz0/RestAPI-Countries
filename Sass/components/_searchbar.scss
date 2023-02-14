@@ -1,0 +1,85 @@
+.form {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6.4rem;
+  padding: 0 2.4rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__icon-search {
+    height: 2.2rem;
+    width: 2.2rem;
+    fill: $color-darkmode-elements;
+    stroke: $color-white;
+
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+
+    @include respond(tab-land) {
+      left: 4%;
+    }
+
+    @include respond(phone) {
+      top: 26%;
+      left: 70%;
+    }
+  }
+
+  &__input-text {
+    form {
+      width: 44rem;
+      height: 5rem;
+      box-shadow: 0px 16px 20px rgba($color-box-shadow, 0.1);
+
+      @include respond(phone) {
+        width: 40rem;
+        height: 8rem;
+      }
+
+      input {
+        @include formbox;
+        padding-left: 6rem;
+        color: $color-white;
+        cursor: pointer;
+
+        &:focus::-webkit-input-placeholder {
+          opacity: 0;
+        }
+
+        &::placeholder {
+          @include formbox-text;
+        }
+
+        &:hover {
+          background-color: lighten($color-darkmode-elements, 10%);
+        }
+      }
+    }
+  }
+
+  &__input--select {
+    form {
+      height: 5rem;
+      width: 20rem;
+      box-shadow: 0px 16px 20px rgba($color-box-shadow, 0.1);
+
+      select {
+        @include formbox;
+        @include formbox-text;
+        padding: 0 1.6rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: lighten($color-darkmode-elements, 10%);
+        }
+      }
+    }
+  }
+}
