@@ -10,6 +10,7 @@ export const state = {
 };
 
 const createStateObj = function (data) {
+  let country;
   Array.isArray(data) ? ([country] = data) : (country = data);
 
   return {
